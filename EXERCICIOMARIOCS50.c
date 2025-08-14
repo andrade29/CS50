@@ -6,6 +6,10 @@ int main(){
     int altura,i,j,k;
     printf("Altura: ");
     scanf("%d", &altura);
+    while(altura < 0 || altura > 8){
+        printf("Altura: ");
+        scanf("%d", &altura);
+    }
 
     for(i=1; i<=altura; i++){
         for(j=0;j<altura - i; j++){
